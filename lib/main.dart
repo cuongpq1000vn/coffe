@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:coffee_shop/component/login/login.dart';
 import 'package:coffee_shop/models/coffee-shop.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -15,10 +16,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(create: (context)=> CoffeeShop(),
-    builder: (context, child) => const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
-    ),);
+    return ChangeNotifierProvider(
+      create: (context) => CoffeeShop(),
+      builder: (context, child) => const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: LoginPage(),
+      ),
+    );
   }
 }
