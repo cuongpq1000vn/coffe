@@ -2,7 +2,7 @@ import "package:flutter/material.dart";
 
 class InputText extends StatelessWidget {
   final String hintText;
-  final controller;
+  final TextEditingController controller;
   final bool obscureText;
   const InputText(
       {super.key,
